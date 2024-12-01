@@ -798,8 +798,13 @@ video {
   padding-right: 0.5rem;
 }
 
-.text-center {
-  text-align: center;
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.pe-5 {
+  padding-inline-end: 1.25rem;
 }
 
 .text-2xl {
@@ -916,10 +921,8 @@ video {
   opacity: 0.5;
 }
 
-.shadow-lg {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+.hover\:border:hover {
+  border-width: 1px;
 }
 
 .outline-none {
