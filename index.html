@@ -1,169 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projec-sass</title>
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <!-- pricing section start -->
-    <section class="container mx-auto">
-        <!--  -->
-      <div class="">
-        <div class="text-center py-5">
-          <h1 class="text-xl font-bold">
-            Pricing for every business, at any stage
-          </h1>
-          <p class="text-gray-400 opacity-12 text-sm py-2">
-            All pricing packages are backed up by a 30-day money back guarantee.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- bootstrap-icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+    
+
+<body> 
+
+  <!-- Navbar -->
+  <nav class="shadow">
+    <div class="container mx-auto py-5">
+      <div class="flex items-center justify-between px-3 py-6 md:flex-row">
+        <!-- Logo -->
+        <a href="" class="text-3xl font-extrabold text-blue-600">SquareX</a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6 ">
+            <ul class="space-x-6 hidden md:flex  md:px-5">
+                <li><a href="" class="text-2xl hover:text-blue-600 pe-5">Home</a></li>
+                <li><a href="" class="text-2xl hover:text-blue-600 pe-5">About</a></li>
+                <li><a href="" class="text-2xl hover:text-blue-600 pe-5">Features</a></li>
+                <li><a href="" class="text-2xl hover:text-blue-600 pe-5">Team</a></li>
+                <li><a href="" class="text-2xl hover:text-blue-600 pe-5">Showcase</a></li>
+                <li><a href="" class="text-2xl hover:text-blue-600 pe-5">Pricing</a></li>
+                <li><a href="" class="text-2xl hover:text-blue-600 pe-5">Blog</a></li>
+                <li><a href="" class="text-2xl hover:text-blue-600 ">Contact</a></li>
+            </ul>
+            <a href=""class="px-6 hidden md:block hover:bg-white bg-blue-600 py-3 rounded-lg text-white hover:text-black text-xl font-bold hover:border hover:shadow ">
+                Get Started</a>
+          
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-600 focus:outline-none focus:text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden md:flex-row px-4 py-3">
+        <ul>
+            <li><a href="#" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Home</a></li>
+            <li><a href="#" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">About</a></li>
+            <li><a href="#" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Features</a></li>
+            <li><a href="#" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Team</a></li>
+            <li><a href="#" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Showcase</a></li>
+            <li><a href="#" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Pricing</a></li>
+            <li><a href="#" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Blog</a></li>
+            <li><a href="#" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Contact</a></li>
+            <li class="py-3"><a href=""class="px-6 hover:bg-white bg-blue-600 py-3 rounded-lg text-white hover:text-black text-xl font-bold hover:border hover:shadow ">
+                Get Started</a></li>
+        </ul>
+    </div>
+  </nav>  
+
+
+  <!-- home -->
+  <div class="min-h-screen flex flex-col justify-center items-center bg-gray-900 bg-opacity-50" style="background-image: url(https://i.insider.com/619833f11ca92500180c13d4?width=700);">
+    <div class="text-center text-white">
+      <h1 class="text-4xl font-bold mb-4">The World's Most Advanced CRM Tool</h1>
+      <p class="text-lg font-medium mb-6">Square is designed with your customers in mind, so you can track and analyze all your data at any time in one central location. Get started today!</p>
+    </div>
+    <div class="flex items-center bg-white rounded-full shadow-lg p-2 max-w-lg w-full">
+      <input type="email" placeholder="Enter Your Email Address"
+        class="flex-1 outline-none px-4 py-2 text-gray-700 rounded-full">
+      <button
+        class="bg-blue-500 text-white font-semibold rounded-full px-6 py-2 hover:bg-blue-600 transition">GET
+        STARTED!</button>
+    </div>
+</div>
+
+  <!-- team -->
+  <div class="bg-gray-100 py-12">
+    <div class="max-w-6xl mx-auto px-6 sm:px-12">
+      <!-- title -->
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-4">The Team Behind Square</h2>
+        <p class="text-gray-900 opacity-50 text-center text-2xl mb-12">
+        There are many variations of passages of Lorem Ipsum available, but the majority
+        have suffered alteration, by injected humour, or new randomised words.
+        </p>
+    </div>
+    <div class="container mx-auto my-4">
+      <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-5 gap-4">
+        <!-- Team Member 1 -->
+        <div class="mx-auto px-2 py-5">
+          <img src="https://tinyurl.com/yxhj9uvn" alt="" class="team-img h-24 w-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 text-center">MAHENDRA</h3>
+          <p class="text-sm text-gray-500 text-center mb-4">Head of PFSD</p>
+          <p class="text-gray-600 text-center">
+            Mahendra is our co-founder and has developed search strategies for a variety
+            of clients for over 5 years.
           </p>
-        </div>
-        <!-- card section start -->
-        <div class=" my-4 mx-10 ">
-          <!-- card-1 start -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-            <div class="p-2 shadow-lg rounded-md hover:-translate-y-px">
-                <div class="text-center ">
-                  <h1 class="font-bold text-sm pt-4">BASIC</h1>
-                  <h1 class="text-4xl font-bold pt-2">$25</h1>
-                  <p class="text-gray-300 opacity-12 text-xs pt-1">Per Month</p>
-                </div>
-                <ul class="py-5 pl-4 pr-5 text-xs text-gray-500">
-                    <li>
-                        <span>✔️</span>
-                        <span>Custom Charts</span>
-                    </li>
-                    <li>
-                        <span>✔️</span>
-                        <span>5 Mailboxes, 10 Gb Storag</span>
-                    </li>
-                    <li>
-                        <span>✔️</span>
-                        <span>Unlimited Free Dashboards</span>
-                    </li>
-                    <li>
-                        <span>✔️</span>
-                        <span>Access to all APIs</span>
-                    </li>
-                </ul>
-                <!-- button start-->
-                <div class="pb-6 pt-4 text-center ">
-                  <a href="" class="text-blue-500 px-3 py-3 rounded bg-white text-xs hover:bg-blue-600 shadow">FREE 15-DAY TRAIL</a>
-                </div>
-                <!-- button end-->
-            </div>
-             <!-- card-1 end -->
-
-              <!-- card-2 start-->
-              <div class="p-4 shadow-lg rounded-md hover:-translate-y-px">
-                <div class="text-center ">
-                  <h1 class="font-bold text-sm pt-4">STANDARD</h1>
-                  <h1 class="text-4xl font-bold pt-2">$99</h1>
-                  <p class="text-gray-300 opacity-12 text-xs pt-1">Per Month</p>
-                </div>
-                <ul class="py-5 pl-4 pr-5 text-xs text-gray-500">
-                    <li>
-                        <span>✔️</span>
-                        <span class="text-gray-800">All Basic features</span>
-                    </li>
-                    <li>
-                        <span>✔️</span>
-                        <span>5 Mailboxes, 50 Gb Storage</span>
-                    </li>
-                    <li>
-                        <span>✔️</span>
-                        <span>Interactive Screen Sharing</span>
-                    </li>
-                    <li>
-                        <span>✔️</span>
-                        <span>Full Reports History</span>
-                    </li>
-                </ul>
-                <!-- button start-->
-                <div class="pb-6 pt-3 text-center ">
-                  <a href="" class=" px-3 py-3 rounded bg-blue-600 text-xs text-white shadow">FREE 15-DAY TRAIL</a>
-                </div>
-                <!-- button end-->
-            </div>
-              <!-- card-2 end-->
-
-              <!-- card-3 start-->
-              <div class="p-2 shadow-lg rounded-md hover:-translate-y-px">
-                <div class="text-center ">
-                  <h1 class="font-bold text-sm pt-4">PRO</h1>
-                  <h1 class="text-4xl font-bold pt-2">$199</h1>
-                  <p class="text-gray-300 opacity-12 text-xs pt-1">Per Month</p>
-                </div>
-                <ul class="py-5 pl-4 pr-5 text-xs text-gray-500">
-                    <li>
-                        <span>✔️</span>
-                        <span class="text-gray-800">All Standard Features</span>
-                    </li>
-                    <li>
-                        <span>✔️</span>
-                        <span>50 Mailboxes,90 Gb Storage</span>
-                    </li>
-                    <li>
-                        <span>✔️</span>
-                        <span>Dedicated Account Manager</span>
-                    </li>
-                    <li>
-                        <span>✔️</span>
-                        <span>24/7 Priority SupportAccess to all APIs</span>
-                    </li>
-                </ul>
-                  
-                
-                <!-- button start -->
-                <div class="pb-6 pt-3 text-center ">
-                  <a href="" class="text-blue-500 px-3 py-3 rounded bg-white text-xs hover:bg-blue-600 shadow">FREE 15-DAY TRAIL</a>
-                </div>
-                <!-- button end-->
-            </div>
-             <!-- card-3 end-->
+          <div class="flex justify-center mt-4 space-x-4">
+              <a href="#" class="text-pink-800 hover:text-blue-700"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-blue-500 hover:text-blue-700"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-pink-500 hover:text-pink-700"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="text-blue-800 hover:text-blue-900"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
-        <!-- card section end -->
-      </div>
-    </section>
-    <!-- communicate start -->
-     <section class="container bg-blue-600  mx-auto my-16 md:grid-flow-row gap-3 shadow-xl rounded border">
-        <h1 class="text-center text-white pt-10 ">Ready to make your sales team more productive?</h1>
-        <p class="text-center text-white pt-2 ">Communicate with flexible tools that go where your team goes.</p>
-        <div class=" pb-10 text-center pt-10">
-            <a href="" class="bg-white text-blue-600  hover:bg-blue-600 border hover:text-white rounded px-2 py-2 shadow-slate-500">Get Started</a>
-            <a href="#" class="bg-blue-600 text-white rounded px-2 py-2 hover:bg-white hover:text-blue-500 border">Request Demo</a>
-        </div>
-     </section>
-    <!-- communicate end -->
-     <!-- freqently asked qestions start -->
- 
-      <div class="pt-5">
-        <div class="text-center   ">
-            <h1 class="font-bold">Frequently Asked Questions</h1>
-            <p class="text-gray-500 pt-2">Communicate with flexible tools that go where your team goes.</p>
+        <!-- Team Member 2 -->
+        <div class="mx-auto px-2 py-5">
+          <img src="https://tinyurl.com/pwched4r" alt="" class="team-img h-24 w-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 text-center">THANOOJ</h3>
+          <p class="text-sm text-gray-500 text-center mb-4">PFSD</p>
+          <p class="text-gray-600 text-center">
+            Mahendra is our co-founder and has developed search strategies for a variety
+            of clients for over 5 years.
+          </p>
+          <div class="flex justify-center mt-4 space-x-4">
+              <a href="#" class="text-pink-800 hover:text-blue-700"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-blue-500 hover:text-blue-700"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-pink-500 hover:text-pink-700"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="text-blue-800 hover:text-blue-900"><i class="bi bi-linkedin"></i></a>
           </div>
-         <div class="container grid grid-cols-1 md:grid-cols-2 gap-5 my-5 mx-auto pt-5 ">
-            <div class="text-sm">
-                <h4>How can I log in to my account?</h4>
-                <p class="text-gray-400 text-sm">Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
-                <h4>Does Square have a free plan?</h4>
-                <p class="text-gray-400 text-sm">Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
-                <h4>Do you have a money back guarantee?</h4>
-                <p class="text-gray-400 text-sm">Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
-            </div>
-            <div class="text-sm">
-                <h4>How do I install Square?</h4>
-                <p class="text-gray-400 text-sm">Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
-                <h4>Do I get limited features in trial period?</h4>
-                <p class="text-gray-400 text-sm">Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
-                <h4>What are the modes of payment that you accept?</h4>
-                <p class="text-gray-400 text-sm">Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
-            </div>
         </div>
+        <!-- Team Member 3 -->
+        <div class="mx-auto px-2 py-5">
+          <img src="https://tinyurl.com/v9ysj6zp" alt="" class="team-img h-24 w-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 text-center">VIGNA</h3>
+          <p class="text-sm text-gray-500 text-center mb-4">JFSD</p>
+          <p class="text-gray-600 text-center">
+            Vigna is our co-founder and has developed search strategies for a variety
+            of clients for over 5 years.
+          </p>
+          <div class="flex justify-center mt-4 space-x-4">
+              <a href="#" class="text-pink-800 hover:text-blue-700"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-blue-500 hover:text-blue-700"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-pink-500 hover:text-pink-700"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="text-blue-800 hover:text-blue-900"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <!-- Team Member 4 -->
+        <div class="mx-auto px-2 py-5">
+          <img src="https://tinyurl.com/yc25z2rj" alt="" class="team-img h-24 w-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 text-center">SASI KUMAR</h3>
+          <p class="text-sm text-gray-500 text-center mb-4">PFSD</p>
+          <p class="text-gray-600 text-center">
+            Sasi is our co-founder and has developed search strategies for a variety
+            of clients for over 5 years.
+          </p>
+          <div class="flex justify-center mt-4 space-x-4">
+              <a href="#" class="text-pink-800 hover:text-blue-700"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-blue-500 hover:text-blue-700"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-pink-500 hover:text-pink-700"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="text-blue-800 hover:text-blue-900"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <!-- Team Member 5 -->
+        <div class="mx-auto px-2 py-5">
+          <img src="https://tinyurl.com/ypmf7nuk" alt="" class="team-img h-24 w-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 text-center">RAKESH</h3>
+          <p class="text-sm text-gray-500 text-center mb-4">JFSD</p>
+          <p class="text-gray-600 text-center">
+            Rakesh is our co-founder and has developed search strategies for a variety
+            of clients for over 5 years.
+          </p>
+          <div class="flex justify-center mt-4 space-x-4">
+              <a href="#" class="text-pink-800 hover:text-blue-700"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-blue-500 hover:text-blue-700"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-pink-500 hover:text-pink-700"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="text-blue-800 hover:text-blue-900"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <!-- Team Member 6 -->
+        <div class="mx-auto px-2 py-5">
+          <img src="https://tinyurl.com/3xfyurm6" alt="" class="team-img h-24 w-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 text-center">VINAY</h3>
+          <p class="text-sm text-gray-500 text-center mb-4">Head of JFSD</p>
+          <p class="text-gray-600 text-center">
+            Vinay is our co-founder and has developed search strategies for a variety
+            of clients for over 5 years.
+          </p>
+          <div class="flex justify-center mt-4 space-x-4">
+              <a href="#" class="text-pink-800 hover:text-blue-700"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-blue-500 hover:text-blue-700"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-pink-500 hover:text-pink-700"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="text-blue-800 hover:text-blue-900"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <!-- Team Member 7 -->
+        <div class="mx-auto px-2 py-5">
+          <img src="https://tinyurl.com/ykhwjdew" alt="" class="team-img h-24 w-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 text-center">SUNIL</h3>
+          <p class="text-sm text-gray-500 text-center mb-4">PFSD</p>
+          <p class="text-gray-600 text-center">
+            Sunil is our co-founder and has developed search strategies for a variety
+            of clients for over 5 years.
+          </p>
+          <div class="flex justify-center mt-4 space-x-4">
+              <a href="#" class="text-pink-800 hover:text-blue-700"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-blue-500 hover:text-blue-700"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-pink-500 hover:text-pink-700"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="text-blue-800 hover:text-blue-900"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <!-- Team Member 8 -->
+        <div class="mx-auto px-2  py-5">
+          <img src="https://tinyurl.com/4sfe3s85" alt="" class="team-img h-24 w-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 text-center">VAMSI KRISHNA</h3>
+          <p class="text-sm text-gray-500 text-center mb-4">JFSD</p>
+          <p class="text-gray-600 text-center">
+            Vamsi Krishna is our co-founder and has developed search strategies for a variety
+            of clients for over 5 years.
+          </p>
+          <div class="flex justify-center mt-4 space-x-4">
+              <a href="#" class="text-pink-800 hover:text-blue-700"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-blue-500 hover:text-blue-700"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-pink-500 hover:text-pink-700"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="text-blue-800 hover:text-blue-900"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <!-- Team Member 9 -->
+        <div class="mx-auto px-2  py-5">
+          <img src="https://tinyurl.com/bdezn9c7" alt="" class="team-img h-24 w-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 text-center">SAI VAMSI</h3>
+          <p class="text-sm text-gray-500 text-center mb-4">JFSD</p>
+          <p class="text-gray-600 text-center">
+            Sai Vamsi is our co-founder and has developed search strategies for a variety
+            of clients for over 5 years.
+          </p>
+          <div class="flex justify-center mt-4 space-x-4">
+              <a href="#" class="text-pink-800 hover:text-blue-700"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-blue-500 hover:text-blue-700"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-pink-500 hover:text-pink-700"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="text-blue-800 hover:text-blue-900"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <!-- Team Member 10 -->
+        <div class="mx-auto px-2  py-5">
+          <img src="https://tinyurl.com/s8m9kmkc" alt="" class="team-img h-24 w-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 text-center">BHARATH</h3>
+          <p class="text-sm text-gray-500 text-center mb-4">PFSD</p>
+          <p class="text-gray-600 text-center">
+            Bharath is our co-founder and has developed search strategies for a variety
+            of clients for over 5 years.
+          </p>
+          <div class="flex justify-center mt-4 space-x-4">
+              <a href="#" class="text-pink-800 hover:text-blue-700"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-blue-500 hover:text-blue-700"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-pink-500 hover:text-pink-700"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="text-blue-800 hover:text-blue-900"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>        
       </div>
-          <!-- freqently asked qestions end -->
-    <!-- pricing section end -->
-  </body>
+    </div>
+  </div>
+  <section class="container mx-auto">
+    <!--  -->
+  <div class="">
+    <div class="text-center py-5">
+      <h1 class="text-xl font-bold">
+        Pricing for every business, at any stage
+      </h1>
+      <p class="text-gray-400 opacity-12 text-sm py-2">
+        All pricing packages are backed up by a 30-day money back guarantee.
+      </p>
+    </div>
+    <!-- card section start -->
+    <div class=" my-4 mx-10 ">
+      <!-- card-1 start -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div class="p-2 shadow-lg rounded-md hover:-translate-y-px">
+            <div class="text-center ">
+              <h1 class="font-bold text-sm pt-4">BASIC</h1>
+              <h1 class="text-4xl font-bold pt-2">$25</h1>
+              <p class="text-gray-300 opacity-12 text-xs pt-1">Per Month</p>
+            </div>
+            <ul class="py-5 pl-4 pr-5 text-xs text-gray-500">
+                <li>
+                    <span>✔️</span>
+                    <span>Custom Charts</span>
+                </li>
+                <li>
+                    <span>✔️</span>
+                    <span>5 Mailboxes, 10 Gb Storag</span>
+                </li>
+                <li>
+                    <span>✔️</span>
+                    <span>Unlimited Free Dashboards</span>
+                </li>
+                <li>
+                    <span>✔️</span>
+                    <span>Access to all APIs</span>
+                </li>
+            </ul>
+            <!-- button start-->
+            <div class="pb-6 pt-4 text-center ">
+              <a href="" class="text-blue-500 px-3 py-3 rounded bg-white text-xs hover:bg-blue-600 shadow">FREE 15-DAY TRAIL</a>
+            </div>
+            <!-- button end-->
+        </div>
+         <!-- card-1 end -->
+
+          <!-- card-2 start-->
+          <div class="p-4 shadow-lg rounded-md hover:-translate-y-px">
+            <div class="text-center ">
+              <h1 class="font-bold text-sm pt-4">STANDARD</h1>
+              <h1 class="text-4xl font-bold pt-2">$99</h1>
+              <p class="text-gray-300 opacity-12 text-xs pt-1">Per Month</p>
+            </div>
+            <ul class="py-5 pl-4 pr-5 text-xs text-gray-500">
+                <li>
+                    <span>✔️</span>
+                    <span class="text-gray-800">All Basic features</span>
+                </li>
+                <li>
+                    <span>✔️</span>
+                    <span>5 Mailboxes, 50 Gb Storage</span>
+                </li>
+                <li>
+                    <span>✔️</span>
+                    <span>Interactive Screen Sharing</span>
+                </li>
+                <li>
+                    <span>✔️</span>
+                    <span>Full Reports History</span>
+                </li>
+            </ul>
+            <!-- button start-->
+            <div class="pb-6 pt-3 text-center ">
+              <a href="" class=" px-3 py-3 rounded bg-blue-600 text-xs text-white shadow">FREE 15-DAY TRAIL</a>
+            </div>
+            <!-- button end-->
+        </div>
+          <!-- card-2 end-->
+
+          <!-- card-3 start-->
+          <div class="p-2 shadow-lg rounded-md hover:-translate-y-px">
+            <div class="text-center ">
+              <h1 class="font-bold text-sm pt-4">PRO</h1>
+              <h1 class="text-4xl font-bold pt-2">$199</h1>
+              <p class="text-gray-300 opacity-12 text-xs pt-1">Per Month</p>
+            </div>
+            <ul class="py-5 pl-4 pr-5 text-xs text-gray-500">
+                <li>
+                    <span>✔️</span>
+                    <span class="text-gray-800">All Standard Features</span>
+                </li>
+                <li>
+                    <span>✔️</span>
+                    <span>50 Mailboxes,90 Gb Storage</span>
+                </li>
+                <li>
+                    <span>✔️</span>
+                    <span>Dedicated Account Manager</span>
+                </li>
+                <li>
+                    <span>✔️</span>
+                    <span>24/7 Priority SupportAccess to all APIs</span>
+                </li>
+            </ul>
+              
+            
+            <!-- button start -->
+            <div class="pb-6 pt-3 text-center ">
+              <a href="" class="text-blue-500 px-3 py-3 rounded bg-white text-xs hover:bg-blue-600 shadow">FREE 15-DAY TRAIL</a>
+            </div>
+            <!-- button end-->
+        </div>
+         <!-- card-3 end-->
+      </div>
+    </div>
+    <!-- card section end -->
+  </div>
+</section>
+<!-- communicate start -->
+ <section class="container bg-blue-600  mx-auto my-16 md:grid-flow-row gap-3 shadow-xl rounded border">
+    <h1 class="text-center text-white pt-10 ">Ready to make your sales team more productive?</h1>
+    <p class="text-center text-white pt-2 ">Communicate with flexible tools that go where your team goes.</p>
+    <div class=" pb-10 text-center pt-10">
+        <a href="" class="bg-white text-blue-600  hover:bg-blue-600 border hover:text-white rounded px-2 py-2 shadow-slate-500">Get Started</a>
+        <a href="#" class="bg-blue-600 text-white rounded px-2 py-2 hover:bg-white hover:text-blue-500 border">Request Demo</a>
+    </div>
+ </section>
+<!-- communicate end -->
+ <!-- freqently asked qestions start -->
+
+  <div class="pt-5">
+    <div class="text-center   ">
+        <h1 class="font-bold">Frequently Asked Questions</h1>
+        <p class="text-gray-500 pt-2">Communicate with flexible tools that go where your team goes.</p>
+      </div>
+     <div class="container grid grid-cols-1 md:grid-cols-2 gap-5 my-5 mx-auto pt-5 ">
+        <div class="text-sm">
+            <h4>How can I log in to my account?</h4>
+            <p class="text-gray-400 text-sm">Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
+            <h4>Does Square have a free plan?</h4>
+            <p class="text-gray-400 text-sm">Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
+            <h4>Do you have a money back guarantee?</h4>
+            <p class="text-gray-400 text-sm">Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
+        </div>
+        <div class="text-sm">
+            <h4>How do I install Square?</h4>
+            <p class="text-gray-400 text-sm">Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
+            <h4>Do I get limited features in trial period?</h4>
+            <p class="text-gray-400 text-sm">Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
+            <h4>What are the modes of payment that you accept?</h4>
+            <p class="text-gray-400 text-sm">Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
+        </div>
+    </div>
+  </div>
+      <!-- freqently asked qestions end -->
+<!-- pricing section end -->
+  
+  <!-- Contact -->
+  <div class="contact h-screen flex flex-col md:flex-row bg-gray-100">
+        <div class="flex flex-col w-full md:w-1/2 p-2 bg-white shadow-md rounded-lg m-2">
+            <iframe class="w-full h-64 md:h-full rounded-lg drop-shadow-md" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.3282138783206!2d78.39101607498782!3d17.491838983413242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f20663c46d%3A0x846796db82f76735!2sSocial%20Prachar%20-%20Data%20Science%20AI%20full%20Stack%20course%20Training%20Institute!5e0!3m2!1sen!2sin!4v1732955994469!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map Location"></iframe>
+        </div>
+        <div class="flex flex-col w-full justify-center items-center md:w-1/2 p-6 bg-cyan-500 shadow-lg rounded-lg m-2 text-black">
+            <h2 class="text-4xl font-bold text-black">Get in Touch</h2>
+            <p class="mt-2 text-pink-200">Contact us today for more details</p>
+            <form class="mt-8 w-full max-w-lg">
+                <input type="text" id="full-name" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4" placeholder="Full Name*" required>
+                <input type="email" id="email" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4" placeholder="Email Address*" required>
+                <input type="tel" id="phone-number" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4" placeholder="Phone Number*" required>
+                <textarea id="message" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4" placeholder="Your Message*" required></textarea>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded transition duration-200">SEND MESSAGE</button>
+            </form>
+        </div>
+    </div>
+
+  
+    
+
+  <script src="index.js"></script>
+</body>
+
 </html>
