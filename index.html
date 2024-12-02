@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <style>
+        body{
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+
+   
     <!-- bootstrap-icons cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -23,13 +30,13 @@
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-6 ">
             <ul class="space-x-6 hidden md:flex  md:px-5">
-                <li><a href="" class="text-2xl hover:text-blue-600 pe-5">Home</a></li>
+                <li><a href="#home" class="text-2xl hover:text-blue-600 pe-5">Home</a></li>
                 <li><a href="" class="text-2xl hover:text-blue-600 pe-5">About</a></li>
                 <li><a href="" class="text-2xl hover:text-blue-600 pe-5">Features</a></li>
                 <li><a href="#team" class="text-2xl hover:text-blue-600 pe-5">Team</a></li>
                 <li><a href="" class="text-2xl hover:text-blue-600 pe-5">Showcase</a></li>
                 <li><a href="#price" class="text-2xl hover:text-blue-600 pe-5">Pricing</a></li>
-                <li><a href="" class="text-2xl hover:text-blue-600 pe-5">Blog</a></li>
+                <li><a href="#blog" class="text-2xl hover:text-blue-600 pe-5">Blog</a></li>
                 <li><a href="#contact" class="text-2xl hover:text-blue-600 ">Contact</a></li>
             </ul>
             <a href=""class="px-6 hidden md:block hover:bg-white bg-blue-600 py-3 rounded-lg text-white hover:text-black text-xl font-bold hover:border hover:shadow ">
@@ -51,13 +58,13 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden md:flex-row px-4 py-3">
         <ul>
-            <li><a href="#" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Home</a></li>
+            <li><a href="#home" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Home</a></li>
             <li><a href="#" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">About</a></li>
             <li><a href="#" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Features</a></li>
             <li><a href="#team" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Team</a></li>
             <li><a href="#" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Showcase</a></li>
             <li><a href="#price" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Pricing</a></li>
-            <li><a href="#" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Blog</a></li>
+            <li><a href="#blog" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Blog</a></li>
             <li><a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600 text-2xl">Contact</a></li>
             <li class="py-3"><a href=""class="px-6 hover:bg-white bg-blue-600 py-3 rounded-lg text-white hover:text-black text-xl font-bold hover:border hover:shadow ">
                 Get Started</a></li>
@@ -67,7 +74,7 @@
 
 
   <!-- home -->
-  <div class="min-h-screen flex flex-col justify-center items-center bg-gray-900 bg-opacity-50 mb-5" style="background-image: url(https://c.stocksy.com/a/szv500/z9/1414584.jpg)">
+  <div id="home" class="min-h-screen flex flex-col justify-center items-center bg-gray-900 bg-opacity-50 mb-5" style="background-image: url(https://c.stocksy.com/a/szv500/z9/1414584.jpg)">
     <div class="text-center text-white">
       <h1 class="text-4xl font-bold mb-4">The World's Most Advanced CRM Tool</h1>
       <p class="text-lg font-medium mb-6">Square is designed with your customers in mind, so you can track and analyze all your data at any time in one central location. Get started today!</p>
@@ -413,6 +420,45 @@
   </div>
       <!-- freqently asked qestions end -->
 <!-- pricing section end -->
+ 
+  <!-- blog -->
+  <div id="blog" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-12">
+    <!-- heading starts -->
+    <h2 class="text-3xl font-semibold text-center mb-12 pt-6">Our Blog</h2>
+    <!-- heading ends -->
+    <!-- card-1 starts -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 ">
+    <div class="bg-white rounded-lg overflow-hidden shadow-2xl transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 ">
+    <img src="https://img.freepik.com/premium-photo/woman-smiling-while-working-laptop-bright-modern-office-environment_132358-62577.jpg" alt="" class="w-full">
+    <div class="p-6 drop-shadow-xl">
+    <h3 class="text-base text-gray-900 font-semibold mb-2 hover:text-blue-600 text-center">The Guide To LinkedIn Ads</h3>
+    <p class="text-gray-600 text-sm mb-4 opacity-40 ">📆 August 1st, 2019</p>
+    <p class="text-gray-500  text-xs">Quis autem velis nets reprehender net etid quiste voluptate velite est quam nihis etsa sedit varias.</p>
+    </div>
+    </div>
+    <!-- card-1 ends -->
+    <!-- card-2 starts -->
+    <div class="bg-white rounded-lg overflow-hidden shadow-2xl transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 ">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNnd3eQq7HQBytEww8wqTbjZHNlC5TISvs5w&s " alt="" class="w-full h-52">
+    <div class="p-6">
+    <h3 class="text-base text-gray-900 font-semibold mb-2 hover:text-blue-600 text-center ">Affinity Designer Quick Start</h3>
+    <p class="text-gray-600 text-sm mb-4 opacity-40">📆 September 27th, 2019</p>
+    <p class="text-gray-500 text-xs">Quis autem velis nets reprehender net etid quiste voluptate velite est quam nihis etsa sedit varias.</p>
+    </div>
+    </div>
+    <!-- card-2 ends -->
+     <!-- card-3 starts -->
+    <div class="bg-white rounded-lg overflow-hidden shadow-2xl transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 ">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3WUGBS2qMF7gcjiQwHz2SGIjwBX5jiygQg&s" alt="" class="w-full">
+    <div class="p-6">
+    <h3 class="text-base text-gray-900 font-semibold mb-2 hover:text-blue-600 text-center">Our Happy Team</h3>
+    <p class="text-gray-600 text-sm mb-4  opacity-40">📆 July 11th, 2019</p>
+    <p class="text-gray-500 text-xs ">Quis autem velis nets reprehender net etid quiste voluptate velite est quam nihis etsa sedit varias.</p>
+    </div>
+    </div>
+    <!-- card-3 ends -->
+    </div>
+    </div>
   
   <!-- Contact -->
    <div id="contact">
